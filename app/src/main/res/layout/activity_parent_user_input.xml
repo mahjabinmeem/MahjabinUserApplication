@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mahjabin.userapp.MainActivity">
+
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/firstName"
+        android:layout_below="@+id/firstName"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lastName"
+        android:layout_below="@+id/lastName"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Street"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/street"
+        android:layout_below="@+id/street"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/city"
+        android:layout_below="@+id/city"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="State"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/zip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/state"
+        android:layout_below="@+id/state"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Zip"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/addUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Create User" />
+
+    <Button
+        android:id="@+id/viewAllUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/zip"
+        android:text="View/Delete User" />
+
+    <Button
+        android:id="@+id/updateParentUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Update User" />
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mahjabin.userapp.UpdateParentUser">
+
+    <EditText
+        android:id="@+id/updateParentFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/updateParentLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/updateParentFirstName"
+        android:layout_below="@+id/updateParentFirstName"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="New Last Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/updateStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/updateParentLastName"
+        android:layout_below="@+id/updateParentLastName"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="New Street"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/updateCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/updateStreet"
+        android:layout_below="@+id/updateStreet"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="New City"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/updateState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/updateCity"
+        android:layout_below="@+id/updateCity"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="New State"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/updateZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/updateState"
+        android:layout_below="@+id/updateState"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="New Zip"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/updateParentBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/updateZip"
+        android:text="Update User" />
+
+</RelativeLayout>
